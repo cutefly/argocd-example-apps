@@ -1,0 +1,11 @@
+# templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-green
+spec:
+  type: ClusterIP
+  selector:
+    app: nginx
+  ports:
+  - port: 80
