@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: nginx-blue
 spec:
-  type: CluterIP
+  type: ClusterIP
   selector:
     app: nginx
   ports:
