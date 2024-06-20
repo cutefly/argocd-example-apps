@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: registry.club012.com/nginxhello:20240620171800
+        image: registry.club012.com/nginxhello
         env:
         - name: COLOR
           value: blue
