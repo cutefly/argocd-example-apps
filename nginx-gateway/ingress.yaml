@@ -33,6 +33,6 @@ spec:
             pathType: ImplementationSpecific
             backend:
               service:
-                name: nginx-blue-external
+                name: nginx-gateway
                 port:
                   number: 80
