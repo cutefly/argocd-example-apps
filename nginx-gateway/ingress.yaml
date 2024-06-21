@@ -19,7 +19,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: nginx-red.red.svc.cluter.local
+                name: nginx-red-external
                 port:
                   number: 80
           - path: /black

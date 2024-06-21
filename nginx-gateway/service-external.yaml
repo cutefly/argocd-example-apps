@@ -4,7 +4,7 @@ metadata:
   annotations:
   name: nginx-blue-external
 spec:
-  type: ExternalName
+  clusterIP: None
   # {Service Name}.{Namespace}.svc.cluster.local 형식으로 작성
   externalName: nginx-blue.blue.svc.cluster.local
 ---
@@ -14,7 +14,7 @@ metadata:
   annotations:
   name: nginx-red-external
 spec:
-  type: ExternalName
+  clusterIP: None
   externalName: nginx-red.red.svc.cluster.local
 ---
 apiVersion: v1
@@ -23,5 +23,5 @@ metadata:
   annotations:
   name: nginx-black-external
 spec:
-  type: ExternalName
+  clusterIP: None
   externalName: nginx-black.black.svc.cluster.local
