@@ -24,4 +24,4 @@ metadata:
   name: nginx-black-external
 spec:
   type: ExternalName
-  externalName: nginx-black.black
+  externalName: nginx-gateway
