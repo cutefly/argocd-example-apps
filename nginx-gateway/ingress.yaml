@@ -9,21 +9,21 @@ spec:
       http:
         paths:
           - path: /blue
-            pathType: ImplementationSpecific
+            pathType: Prefix
             backend:
               service:
                 name: nginx-blue-external
                 port:
                   number: 80
           - path: /red
-            pathType: ImplementationSpecific
+            pathType: Prefix
             backend:
               service:
                 name: nginx-red-external
                 port:
                   number: 80
           - path: /black
-            pathType: ImplementationSpecific
+            pathType: Prefix
             backend:
               service:
                 name: nginx-black-external
