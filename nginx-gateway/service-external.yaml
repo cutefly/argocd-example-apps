@@ -6,7 +6,7 @@ metadata:
 spec:
   type: ExternalName
   # {Service Name}.{Namespace}.svc.cluster.local 형식으로 작성
-  externalName: nginx-blue.blue.svc.cluster.local
+  externalName: nginx-blue.blue.svc
 ---
 apiVersion: v1
 kind: Service
@@ -15,7 +15,7 @@ metadata:
   name: nginx-red-external
 spec:
   type: ExternalName
-  externalName: nginx-red.red.svc.cluster.local
+  externalName: nginx-red.red.svc
 ---
 apiVersion: v1
 kind: Service
@@ -24,4 +24,4 @@ metadata:
   name: nginx-black-external
 spec:
   type: ExternalName
-  externalName:  www.google.com
+  externalName: nginx-black.black.svc
