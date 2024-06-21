@@ -12,28 +12,21 @@ spec:
             pathType: ImplementationSpecific
             backend:
               service:
-                name: nginx-blue
+                name: nginx-blue-external
                 port:
                   number: 80
           - path: /red
             pathType: ImplementationSpecific
             backend:
               service:
-                name: nginx-red
+                name: nginx-red-external
                 port:
                   number: 80
           - path: /black
             pathType: ImplementationSpecific
             backend:
               service:
-                name: nginx-black
-                port:
-                  number: 80
-          - path: /black
-            pathType: ImplementationSpecific
-            backend:
-              service:
-                name: nginx-black
+                name: nginx-black-external
                 port:
                   number: 80
           - path: /
